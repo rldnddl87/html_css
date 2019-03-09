@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>텍스트 라벨 예제</title>
+</head>
+<body>
+	<h3>다양한 입력 폼</h3>
+		<form method="get" action="">
+			<p>
+			성명 : <input type="text" name="name"><br>
+			</p>
+			<p>
+			<mark>
+			텍스트 라벨을 클릭해도 됩니다.
+			label 태그의 for 속성값과 input태그의 id 속성값이<br>
+			 같으면 라벨의 텍스트를 클릭해도 선택이 가능</mark><br>
+			성별 : 
+			<label for="male">남성</label>
+			<input type="radio" name="gender" id="male" value="male" checked>
+			<label for="female">여성</label>
+			<input type="radio"	name="gender" id="female" value="female">
+			</p>
+			<p>
+			과목:
+			<select name="object" size="1">
+				<option value="java" selected>자바</option>
+				<option value="html">html</option>
+				<option value="javascript">javascript</option>
+				<option value="css">css</option>
+			</select>
+			</p>
+			<p>
+			구입희망분야(복수선택 가능)<br>
+			-분야 : 
+			<input type="checkbox" name="hope" value="computer">컴퓨터
+			<input type="checkbox" name="hope" value="economy">경제
+			<input type="checkbox" name="hope" value="common sense">상식		
+			</p>
+			<p>
+			비고:<br>
+			<textarea name="comment" cols="30" rows="10">입력하세요</textarea>
+			</p>
+			<p>
+			파일업로드하기<br>
+			<input type="file" name="file">
+			</p>
+			<hr color="red">
+			<input type="submit" value="전송">
+			<input type="reset" value="취소">
+						
+		</form>
+
+
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>달력 만들자</title>
+</head>
+<body>
+	<form method="get" action="result.html">
+		<table width="500" border="2">
+		<tr>
+			<td>date (연-월-일)</td>
+			<td>month (연도-월))</td>
+			<td>week (연도-주)</td>
+		</tr>
+		<tr>
+		<!-- ▼드롭 다운 버튼을 클릭하면 달력이 펼처친다.스핀버튼(드롭다운 버튼 왼쪽에 있음)을 클릭하면 날짜를 수정할 수 있다. -->
+			<td><input type="date" name="date"></td>
+			<td><input type="month" name="month"></td>
+			<td><input type="week" name="week"></td>
+		</tr>
+		<tr>
+			<td width=25%>&nbsp;&nbsp; time(시간)</td>
+			<td width=35%>datetime (날짜-시간)</td>
+			<td width=35%>datetime-local (지역시간)</td>
+		</tr>
+		<tr>
+			<td> &nbsp;&nbsp; <input type="time" name="time"></td>
+			<td><input type="datetime" name="datetime"></td>
+			<td><input type="datetime-local" name="datetime-local"></td>
+		</tr>
+		</table>
+		<input type ="submit" value="데이터 전송하기">			
+	</form>
+	
+	
+		<form method="get" action="result.html">
+		<table width="500" border="2">
+		
+		<tr>
+			<td width=25%>&nbsp;&nbsp; time(시간)</td>
+			<td width=35%>datetime (날짜-시간)</td>
+			<td width=35%>datetime-local (지역시간)</td>
+		</tr>
+		<tr>
+			<td> &nbsp;&nbsp; <input type="time" name="time"></td>
+			<td><input type="datetime" name="datetime"></td>
+			<td><input type="datetime-local" name="datetime-local"></td>
+		</tr>
+		</table>
+		<input type ="submit" value="데이터 전송하기">			
+	</form>
+	
+
+
+
+
+</body>
+</html>
