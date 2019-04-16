@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>scale</title>
+	<style>
+		body{margin:200px}						
+		.container{				
+				margin:0 auto;
+				width:100px;
+				height:80px;
+				position:relative}
+		
+		.bar1,.bar2,.bar3{display:border-box;margin-top:10px;
+						background:black;
+						width:100px;
+						height:15px;
+						
+			}
+			
+			@keyframes move{	
+				100%{transform:rotate(45deg) translateY(35px);}
+				}
+			@keyframes move1{			
+				100%{transform:rotate(-45deg) translateY(-35px);}				
+			}	
+			
+		.container:hover>.bar2{visibility:hidden}	
+		.container:hover>.bar1{animation:move 3s;}
+		.container:hover>.bar3{animation:move1 3s;}
+		
+	
+		
+		
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+</body>
+</html>

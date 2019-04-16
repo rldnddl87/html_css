@@ -1,0 +1,32 @@
+tr<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Transform(변환)</title>
+<!-- 텍스트나 이미지를 회전이나 확대 등 다양한 기하학적인 모양으로 출력할 수 있다.
+	변환에서 사용되는 회전 각도의 단위는 deg이며 시계 방향으로 회전한다. -->
+	<style>
+		div{display: inline-block;
+			padding: 5px;
+			color: white;
+			background: olivedrab;
+			}
+			/*변환*/
+		div#rotate1,div#rotate2,div#gom{transform:rotate(0de);}
+		div#rotate1:hover{transform:rotate(45deg);}
+		div#rotate2:hover{transform:rotate(-45deg);}
+		#gom:hover{transform:rotate(180deg)}	
+			
+	</style>
+</head>
+<body>
+	<h3>다양한 transform!!!</h3>
+		아래는 회전(rotate)적용 됩니다.
+		도한 마우스를 올리면 추가적인 변환이 일어납니다.
+		<hr color=olive>
+		<br><br><br>
+	<div id=rotate1>rotate(20deg)->rotate(45deg)</div>
+	<div id=rotate2>rotate(20deg)->rotate(-45deg)</div>	
+	<div id=gom>ʕ•ᴥ•ʔ</div>
+</body>
+</html> 잘보이고싶어서~~*                                                                                                                                                                                                                             ^_^*

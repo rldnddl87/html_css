@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>입력하세요</title>
+	<style>
+	input{margin:auto;}
+	input[type="number"]{width:31.4%;}
+	input[type="password"]{width:99%}
+	input[type="email"]{width:99%}
+	input[type="text"]{width:48.3%}
+	input{display:inline-block;height:35px;border:2px solid lightgray;border-radius:5px}
+	form{margin:0 auto}
+	body{width:450px;height:350pxm;margin:auto;margin-top:10%}
+	fieldset{border-style:solid; border-color:#20B2AA;border-radius:15px}
+	legend{text-align:center;font-weight:bold;font-size:25pt;color:	#20B2AA;font-family:"배달의민족 한나는 열한살 보통"}
+	input[type="submit"]{width:100%;height:60px;background-color:#20B2AA;font-family:"배달의민족 한나는 열한살 보통";font-weight:bold}
+	input[type="radio"]{height:auto}
+	
+
+	</style>
+</head>
+<body>
+	<fieldset>
+	<legend>입력폼</legend>
+	<form method="get" action=""> <!-- 비밀은:post -->
+	<p>
+	<input type="text" name="lastname" placeholder="성">
+	<input type="text" name="firstname" placeholder="이름"></p>
+	<p>
+	<input type="email" name="email" placeholder="Email"></p>
+	<p>
+	<input type="password" name="password" placeholder="패스워드"></p>
+	<p>
+	<input type="password" name="password_check" placeholder="패스워드확인"></p>
+	<p>
+	<input type="number" name="month" min="1" max="12" placeholder="월">
+	<input type="number" name="date" min="1" max="31" placeholder="일">
+	<input type="number" name="month" min="1950" placeholder="년도">
+	</p>
+	<p>
+	성별 :
+	<label for="male">남성</label>
+			<input type="radio" name="gender" id="male" value="male">
+	<label for="female">여성</label>
+			<input type="radio"	name="gender" id="female" value="female">
+	</p>
+	<input type=submit value="회원가입">
+		
+	</form>			
+	</fieldset>	
+</body>
+</html>

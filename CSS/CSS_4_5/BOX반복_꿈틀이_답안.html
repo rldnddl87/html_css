@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>꿈틀이 만들자</title>
+	<style>
+		
+		li{list-style: none;
+			float:left;
+			line-height:75px; /*세로의 기링만큼 값을 주면 세로 가운데 정렬이 된다.*/
+				width:60px;
+				text-align:center;}
+				
+		li:first-child{border-radius:10px 0 0 10px;}
+		li:last-child{border-radius:0 10px 10px 0;}
+		li:nth-child(2n)
+				{background-color:red}
+		li:nth-child(2n+1){background-color:green}
+		p{clear:left;padding-left:50px}
+							
+	</style>
+</head>
+<body>
+	<ul>
+		<li>first</li>
+		<li>second</li>
+		<li>third</li>
+		<li>fourth</li>
+		<li>fifth</li>
+		<li>sixth</li>
+		<li>seventh</li>	
+	</ul>
+	<p>꿈틀이다!</p>		
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>가상 클래스(pseudo class)선택자 - ':'기호를 사용하는 선택자</title>
+	<!-- 가상 클래스는 슈도 클래스(pseudo calss)라고도 하는데 웹 문서의 소스에는 실제로 존재하지 않지만 필요에 의해
+	임의로 가상의 선택자를 지정하여 사용하는 것을 말합니다.
+	:active - 사용자에의해 활성화된 요소를 선택(마우스를 클릭한 태그 선택)
+	:hover - 마우스 커서가 위치한 요소를 선택(마우스를 올린 태그)
+	:focus - 초첨이 맞추어진 input 태그를 선택 -->
+	<style>
+		h1:hover{color:red}
+		h1:active{color:blue}
+		input:focus{background-color:linen; width:300px;height:300px}
+	</style>
+</head>
+<body>
+	<h1>가상 클래스 선택자<span class="linen">(반응 선택자)</span>를 이용하여 색상을 지정합니다.</h1>
+	<input type="text" name="in1" size=20><br>
+</body>
+</html>

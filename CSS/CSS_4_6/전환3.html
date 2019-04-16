@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<STYLE>	
+	body{margin:auto;text-align:center;margin-top:25%}
+	span{font-size:20pt;}	
+	@keyframes change{
+				0%{color:red;}
+				25%{color:bule;}
+				50%{color:green;}
+				75%{color:yellow;}
+								}
+	@keyframes change1{
+		0%{color:red;}		
+		50%{color:yellow;}
+		100%{color:blue;}		
+		}
+		
+	@keyframes move{
+		from{top:30px;} to{left:30px;} 
+	}	
+		
+	#star1,#star2{animation: change1 1s infinite;}
+	#lunch{animation: change 1s infinite;}
+	#cute{animation:change 4s infinite; animation:move 2s infinite; position:relative}
+	
+
+
+	
+	</STYLE>
+</head>
+<body>
+	<span id=star1>☆</span><span id=lunch>맛있는 점심</span><span id=star2>☆</span>
+	<span id=cute>ʕ•ᴥ•ʔ</span>
+</body>
+</html>
